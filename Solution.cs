@@ -8,7 +8,7 @@ class Solution
 
         foreach (var item in customers)
         {
-            Console.WriteLine($"ID: {item.ID}, Firstname: {Item.FirstName}, Lastname: {LastName}");
+            Console.WriteLine($"ID: {item.ID}, Firstname: {item.FirstName}, Lastname: {item.LastName}");
         }
     }
 
