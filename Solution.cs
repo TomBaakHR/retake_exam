@@ -4,7 +4,12 @@ class Solution
     
     public static void Q1(ExamContext db, string Name)
     {
-        
+        var customers = db.Customers.Where(c => c.FirstName == "John" || c.LastName == "John");
+
+        foreach (var item in customers)
+        {
+            Console.WriteLine($"ID: {item.ID}, Firstname: {Item.FirstName}, Lastname: {LastName}");
+        }
     }
 
     public static void Q2(ExamContext db, int ProductID)
